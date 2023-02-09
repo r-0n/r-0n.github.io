@@ -31,7 +31,7 @@ span {
     color: rgb(210, 27, 27);
 }
 
-nav ul li a {
+nav ul li {
     color: white;
     list-style-type: none;
     display: inline-block;
