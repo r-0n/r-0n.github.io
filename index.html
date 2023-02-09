@@ -1,7 +1,76 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Website</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
+
+    <!-- load style on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- scripts for intro message -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="introstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- link for nav icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <canvas id="c"></canvas>
+
+    <div class="topnav" id="myTopnav">
+        <nav>
+            <!-- <ul>
+                <li><a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="contact\contact.html"><i class=""></i>Contact</a></li>
+                <li><a href="about\trans.html"><i class=" fa fa-fw fa-about"></i>About</a></li>
+                <li><a href="#search"><i class="fa fa-fw fa-search"></i>Search</a></li>
+                <li></li>
+            </ul> -->
+
+            <a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="contact\contact.html"><i class=""></i>Contact</a>
+            <a href="about\trans.html"><i class=" fa fa-fw fa-about"></i>About</a>
+            <a href="#search"><i class="fa fa-fw fa-search"></i>Search</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <div id="container">
+        <div id="message">
+            <a id="animate" href="#"><button>Restart Animation</button></a>
+        </div>
+    </div>
+    <!-- partial intro message-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="introtranscript.js"></script>
+
+
+    <!-- code for video carousel -->
+
+    <script src='kzymdn.js'></script>
+    <script src="index.js"></script>
+    <script src="nav.js"></script>
+
+
 </body>
+
+
 </html>
