@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Rony</title>
-
+    <!-- bootstrap import -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navstyle.css">
@@ -72,67 +73,46 @@
     <!-- partial:index.partial.html -->
     <div id="container">
         <div id="message">
-            <a id="animate" href="#"><button>Restart Animation</button></a>
+            <a id="animate" href="#"><button class="introB">Restart Animation</button></a>
         </div>
     </div>
 
 
-    <!-- Section 3 -->
-    <section class="section-3" id="pricing">
-        <h1 class="section-heading">Videos</h1>
-        <div class="section-heading-line"></div>
-        <div class="swiper-container">
-            <div class="pricing-cards-wrapper swiper-wrapper">
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h1 class="pricing-card-heading heading-free">FREE</h1>
-                        <h3 class="pricing-card-price">$0</h3>
-
-                        <button class="pricing-card-btn btn-free">Choose Plan</button>
-                    </div>
-                    <div class="pricing-card-back back-free">
-                        <video class="video" src="images/about-us-video.mp4"></video>
-                    </div>
-                </div>
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h1 class="pricing-card-heading heading-basic">BASIC</h1>
+    <!-- slider -->
 
 
+    <div class="row">
 
-                        <button class="pricing-card-btn btn-basic">Choose Plan</button>
-                    </div>
-                    <div class="pricing-card-back back-basic">
-                        <a href="#">Order Now</a>
-                    </div>
-                </div>
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-
-
-
-                    </div>
-                    <div class="pricing-card-back back-standard">
-                        <a href="#">Order Now</a>
-                    </div>
-                </div>
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h1 class="pricing-card-heading heading-premium">PREMIUM</h1>
-
-
-                        <button class="pricing-card-btn btn-premium">Choose Plan</button>
-                    </div>
-                    <div class="pricing-card-back back-premium">
-                        <a href="#">Order Now</a>
-                    </div>
-                </div>
+        <div class="col-lg-4">first slider
+            <div class="slider">
+                <div><iframe src="//www.youtube.com/embed/1TYl3jhfEDA?rel=0" allowfullscreen frameborder="0" name="slider"></iframe></div>
+                <span>
+      <a href="//www.youtube.com/embed/1TYl3jhfEDA?rel=0&autoplay=1" target="slider">●
+     </a><a href="//www.youtube.com/embed/xFa2_PVMeDQ?rel=0&autoplay=1" target="slider">●
+     </a><a href="//www.youtube.com/embed/hSrOpTYKNMw?rel=0&autoplay=1" target="slider">●
+     </a><a href="//www.youtube.com/embed/WFhzzJjRncI?rel=0&autoplay=1" target="slider">●</a>
+     </span>
             </div>
         </div>
-    </section>
-    <!-- End of Section 3 -->
-    <!-- <p class="show"><iframe width="560" height="315" src="https://www.youtube.com/embed/5lUEt7cfyWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p> -->
 
+        <!-- second slider -->
+
+        <div class="col-lg-4">
+            <div class="carousel">
+                <div><iframe src="//www.youtube.com/embed/5lUEt7cfyWk" allowfullscreen frameborder="0" name="slider1"></iframe></div>
+                <span>
+        <a href="//www.youtube.com/embed/5lUEt7cfyWk" target="slider1"><img src="//img.youtube.com/vi/5lUEt7cfyWk/default.jpg"></a>
+        <a href="//www.youtube.com/embed/xFa2_PVMeDQ?rel=0&autoplay=1" target="slider1"><img src="//img.youtube.com/vi/xFa2_PVMeDQ/default.jpg"></a>
+        <a href="//www.youtube.com/embed/hSrOpTYKNMw?rel=0&autoplay=1" target="slider1"><img src="//img.youtube.com/vi/hSrOpTYKNMw/default.jpg"></a>
+        <a href="//www.youtube.com/embed/WFhzzJjRncI?rel=0&autoplay=1" target="slider1"><img src="//img.youtube.com/vi/WFhzzJjRncI/default.jpg"></a>
+      </span>
+            </div>
+        </div>
+
+
+
+
+    </div>
 
     <!-- partial intro message-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
