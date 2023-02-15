@@ -28,7 +28,7 @@ nav {
 }
 
 span {
-    color: rgb(210, 27, 27);
+    color: #B2AC88;
 }
 
 nav ul li {
@@ -42,7 +42,13 @@ nav ul li {
     font-size: 17px;
 }
 
-nav ul li:hover {
-    background-color: #333;
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: .3s;
 }
