@@ -5,32 +5,48 @@
 
     MESSAGES.push({
         delay: 0,
-        text: "Hello! My Name is a Aaron Nlamson Wajah..."
-    });
-
-    MESSAGES.push({
-        delay: 1200,
-        text: "Double Majoring CS & Interactive Media  @ NYU Abu Dhabi."
-    });
-
-    MESSAGES.push({
-        delay: 1200,
-        text: "Office of the Vice Chancellor & WorkSmart Student Assistant."
+        text: "Hey there! Welcome to this site..."
     });
 
     MESSAGES.push({
         delay: 2200,
-        text: "I'm obsessed with creativity..."
+        text: "I have come to love how being around friends..."
     });
 
     MESSAGES.push({
-        delay: 3600,
-        text: "Formula One fanatic..."
+        delay: 4200,
+        text: "Makes the mind feel like a romping star in the Galaxy."
     });
 
     MESSAGES.push({
-        delay: 5200,
-        text: "I play the acoustic guitar and the piano."
+        delay: 6200,
+        text: "So sit back..."
+    });
+
+    MESSAGES.push({
+        delay: 8200,
+        text: "Relax..."
+    });
+
+    MESSAGES.push({
+        delay: 9200,
+        text: "...and click 30MMF for something creative..."
+    });
+
+
+    MESSAGES.push({
+        delay: 12000,
+        text: "...oh and before I forget Click anywhere on the screen to see the point gravitate to a point..."
+    });
+
+    MESSAGES.push({
+        delay: 22000,
+        text: "You tried it yet? Thats what friendship is about..."
+    });
+
+    MESSAGES.push({
+        delay: 26000,
+        text: "We gravitate towards eachother..."
     });
 
     $container = $("#container");
