@@ -15,17 +15,17 @@
 
     MESSAGES.push({
         delay: 2200,
-        text: "I don't interact with anybody..."
+        text: "Love wins..."
     });
 
     MESSAGES.push({
         delay: 3600,
-        text: "My whole sense of reality is, pretty warped..."
+        text: "Love is real..."
     });
 
     MESSAGES.push({
         delay: 5200,
-        text: "Does it bother you that we're not real?"
+        text: "Love is feel"
     });
 
     $container = $("#container");
