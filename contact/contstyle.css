@@ -1,20 +1,52 @@
+html,
+body,
+section {
+    block-size: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(2) {
+    color: white;
+    background-image: url(friends3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(3) {
+    color: white;
+    background-image: url(friends3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 body {
-    overflow: hidden;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background: url(friends.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 p,
 a {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
     font-family: Courier, monospace;
+    font-weight: bold;
     font-smooth: antialiased;
     margin: 0.8em 0;
     font-size: 18px;
-    color: rgb(254, 253, 252);
+    color: rgb(255, 255, 255);
 }
 
 .ghost,
@@ -72,16 +104,16 @@ nav {
 }
 
 .logo {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 28px;
 }
 
 span {
-    color: #B2AC88;
+    color: yellowgreen;
 }
 
 nav ul li {
-    color: white;
+    color: rgb(251, 0, 0);
     list-style-type: none;
     display: inline-block;
     align-items: center;
@@ -91,7 +123,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: red;
     text-decoration: none;
     font-weight: bold;
     transition: .4s;
@@ -100,14 +132,14 @@ nav ul li a {
 nav ul li a:hover {
     transform: scale(1.3);
     cursor: pointer;
-    color: red;
+    color: yellowgreen;
 }
 
 .suscribe {
     padding: 20px 16px;
     text-decoration: none;
     font-size: 17px;
-    color: white;
+    color: red;
     font-weight: bold;
     font-size: 17px;
     transition: .4s;
@@ -122,3 +154,125 @@ nav ul li a:hover {
     cursor: pointer;
     color: red;
 }
+
+
+/* for slider */
+
+.slider-container {
+    position: relative;
+    left: 650px;
+    top: 120px;
+    width: 100%;
+    height: 400px;
+    perspective: 800px;
+    margin-bottom: 0;
+}
+
+.slider {
+    /* display: flex; */
+    width: 110%;
+    height: 105%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 33.33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: center center;
+    /* set the transform origin to the center */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    border: yellowgreen;
+    border-radius: 5%;
+    object-fit: cover;
+    transform: rotateY(0deg);
+    /* set the initial rotation of the video */
+}
+
+.controls {
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    position: relative;
+    background-color: rgb(110, 106, 106);
+    border: #4f4228;
+    border-radius: 10%;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: auto;
+}
+
+.slider .slide:not(:first-child) {
+    transform: rotateY(90deg) translateZ(-300px);
+    pointer-events: none;
+}
+
+.slider .slide.active {
+    transform: none;
+    pointer-events: auto;
+}
+
+
+/* image slider */
+
+.imageSlider {
+    position: relative;
+    top: 200px;
+    left: 600px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.imageSlider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translate(350px);
+}
+
+.imageSlider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+
+/* end of image slider  */
